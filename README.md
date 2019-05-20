@@ -12,3 +12,6 @@ Personal Challenge
 [Day 3]
 - Solved Exercism problem (ISBN Verifier)
 - Improved Hamming solution [Day 1]
+
+[Day 4]
+- Solved Exercism problem (RNA Transcription)
