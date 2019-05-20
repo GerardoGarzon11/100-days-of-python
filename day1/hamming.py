@@ -5,4 +5,4 @@ def distance(strand_a, strand_b):
 	if(len_a != len_b):
 		raise ValueError("Value Error")
 
-	return len([1 for x in zip(strand_a, strand_b) if x[0] != x[1]])
+	return len([1 for ch1, ch2 in zip(strand_a, strand_b) if ch1 != ch2])
