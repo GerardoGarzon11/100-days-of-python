@@ -1,8 +1,12 @@
 def find_anagrams(word, candidates):
-    word_as_letters = list(word).sort()
+    lower_word = word.lower()
+    sorted_lower_word = ''.join(sorted(lower_word))
+
     anagrams = []
-    for x in candidates:
-    	if len(x) == len(word):
-    		if(list(x).sort() == word_as_letters):
-    			anagrams.append(x)
+
+    for candidate in candidates:
+    	if(''.join(sorted(candidate.lower())) == sorted_lower_word):
+    		if(lower_word != candidate.lower()):
+    			anagrams.append(candidate)
+
     return anagrams
