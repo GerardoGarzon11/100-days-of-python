@@ -1,0 +1,5 @@
+After finishing my practice for the day, I write here what I expect to learn tomorrow. In my learning journey, deciding where to go next has been the most difficult thing for me. I always get stucked wondering how to keep improving.
+
+Day 5
+- Complete a few more Exercism problems (2 or 3)
+- Work on mini projects list ideas (the most basic ones, 4 or 5 script projects)
