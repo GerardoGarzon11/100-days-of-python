@@ -15,3 +15,6 @@ Personal Challenge
 
 [Day 4]
 - Solved Exercism problem (RNA Transcription)
+
+[Day 5 to Day 7]
+- Solved as many Exercism problems as possible. I'm trying to solve all the Easy ones that I've unlocked while getting response from the mentor.
