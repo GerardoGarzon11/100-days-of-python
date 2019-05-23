@@ -4,5 +4,14 @@ Day 6
 - Complete a few more Exercism problems (2 or 3) [DONE]
 
 Day 7
-- Work on mini projects list ideas (the most basic ones, 4 or 5 script projects)
-- Complete a few more Exercism problems (2 or 3)
+- Work on mini projects list ideas (the most basic ones, 4 or 5 script projects) [DONE]
+ SOME IDEAS:
+  - Python script that returns the weather, gets info from web service
+  - Python script that draws depending on how long a user presses certain keys. Changes colours and then returns a picture (blind_painting.py), something like that
+  - Small command line game (don't touch the walls)
+  - Basic equation solver
+- Complete a few more Exercism problems (2 or 3) [DONE]
+
+Day 8
+- Solve one of the problems I couldn't solve on Day 7 (Yacht or Palindrome Products)
+- Start working on one of the mini projects
