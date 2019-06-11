@@ -1,12 +1,8 @@
-factors = {
-    3: 'Pling',
-    5: 'Plang',
-    7: 'Plong'
-}
+FACTORS = [(3, 'Pling'), (5, 'Plang'), (7, 'Plong')]
 
 def raindrops(number):
 
-    response = [factors[x] for x in factors if number % x == 0]
+    response = [x[1] for x in FACTORS if number % x[0] == 0]
 
     if len(response):
     	return ''.join(response)
