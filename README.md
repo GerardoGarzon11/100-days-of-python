@@ -18,3 +18,7 @@ Personal Challenge
 
 [Day 5 to Day 7]
 - Solved as many Exercism problems as possible. I'm trying to solve all the Easy ones that I've unlocked while getting response from the mentor.
+
+[Day 11]
+- After a couple of awful weeks at the office (still awful, but gotta keep going) I'm back.
+- Little cool exercise (https://www.kaggle.com/colinmorris/booleans-and-conditionals). Trying to get a higher winning % with a blackjack function.
