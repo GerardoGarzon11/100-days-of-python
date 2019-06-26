@@ -12,7 +12,7 @@ def printFormattedTable(stats):
 	#titles = stats.keys
 
 	for row in stats:
-		line = '|'.join(row.track.ljust(12))
+		line = '|'.join(row['track'].ljust(12))
 		print(line)
 
 # 1 - Read name of all tracks from:
