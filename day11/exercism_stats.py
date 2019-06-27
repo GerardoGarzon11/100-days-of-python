@@ -8,54 +8,35 @@ from bs4 import BeautifulSoup
 
 import requests
 
+# TODO: Print table with pretty format
+
 def printFormattedTable(stats):
-	#titles = stats.keys
+	print(stats)
 
-	for row in stats:
-		line = '|'.join(row['track'].ljust(12))
-		print(line)
-
-# 1 - Read name of all tracks from:
-# https://exercism.io/#explore-languages
+# Read name of all tracks
 exercism_main = requests.get('https://exercism.io')
-
-#if exercism_main.status_code == 200:
-#	print('Request completed succesfully')
-
 exercism_soup = BeautifulSoup(exercism_main.content, 'html.parser')
-
 track_tags = exercism_soup.findAll('a', {"class": "track"})
-
 trackSet = set([track['href'] for track in track_tags])
-
-# 2 - Generate object with stats and names (empty)
-# First test, retrieve stats for one track
 
 stats = []
 
-# 3 - Read data from track pages (https://exercism.io/tracks/{})
-#   - Show completion graph
+#TODO: Show progress bar
 
+# Iterate track set and get track info
 for id, ref in enumerate(trackSet):
 	track_request = requests.get('https://exercism.io' + ref)
-
 	track_soup = BeautifulSoup(track_request.content, 'html.parser')
-
 	overview_section = track_soup.findAll('div', {"class": "overview-section"})
-
 	track_stats = overview_section[0].find_all('h3')
-
-	mentors, students, exercises = track_stats[0].text.split(' ')[0], track_stats[1].text.split(' ')[0], track_stats[2].text.split(' ')[0]
-
+	
 	stats.append(
 		{
-			'mentors': mentors,
-			'students': students,
-			'exercises': exercises,
+			'mentors': track_stats[0].text.split(' ')[0],
+			'students': track_stats[1].text.split(' ')[0],
+			'exercises': track_stats[2].text.split(' ')[0],
 			'track': ref.split('/')[-1].upper()
 		}
 	)
-
-# 4 - Display table
 
 printFormattedTable(stats)
