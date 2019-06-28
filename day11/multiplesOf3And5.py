@@ -1,5 +1,3 @@
-import math
-
 def getSumOfMultiples(number, divisor):
   """
   Returns sum of multiples of divisor below number
