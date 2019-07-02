@@ -14,6 +14,5 @@ colors_dictionary = {
 def color_code(color):
     return colors_dictionary[color]
 
-
 def colors():
     return list(colors_dictionary.keys())
