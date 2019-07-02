@@ -1,13 +1,13 @@
 def verify(isbn):
     _isbn = [x for x in isbn if x.isdigit() or x == 'X']
     
-    if(len(_isbn) != 10):
+    if len(_isbn) != 10 :
     	return False
-    elif(_isbn[9] != 'X' and not _isbn[9].isdigit()):
+    elif _isbn[9] != 'X' and not _isbn[9].isdigit() :
     	return False
-    elif('X' in _isbn[0:9]):
+    elif 'X' in _isbn[0:9] :
     	return False
-    elif(_isbn[9] == 'X'):
+    elif _isbn[9] == 'X' :
     	_isbn[9] = '10'
 
     _isbn = list(map(int,_isbn))
