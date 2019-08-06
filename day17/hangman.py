@@ -60,9 +60,9 @@ class Hangman:
 
 				if self.moves == 0:
 					self.gameOver = True
-					return 'Game over!'
+					return 'Game over! The word was ' + str(self.word)
 
-				return 'Wrong!' # you have x movements remaining
+				return 'Wrong! You have ' + str(self.moves) + ' movements remaining.'
 			else:
 
 				self.updateGuess(letter)
@@ -73,10 +73,14 @@ class Hangman:
 					return 'You guessed the word!'
 
 				self.displayGameState(True, self.moves, self.guess)
-				return 'Good guess!' # return current guess
+				return 'Good guess!'
 
 	def drawHangman(self, moves):
-		print(Hangman.hangman_states[6 - moves], Hangman.hangman_bottom)
+		print(
+			Hangman.hangman_top,
+			Hangman.hangman_states[6 - moves],
+			Hangman.hangman_bottom
+		)
 
 	def displayCurrentGuess(self, guess):
 		displayStr =  'Your guess: '
